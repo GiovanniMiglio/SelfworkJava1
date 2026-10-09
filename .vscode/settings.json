@@ -1,0 +1,12 @@
+{
+    // Modalità studio: niente suggerimenti AI in questa cartella
+    "github.copilot.enable": {
+        "*": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "editor.inlineSuggest.enabled": false,
+    // Formattatore per i file Java (Shift + Alt + F)
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    }
+}
