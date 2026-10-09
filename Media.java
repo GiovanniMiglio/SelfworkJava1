@@ -1,6 +1,10 @@
 public class Media {
     public static void main(String[] args) {
-        int numeri[] = {2,4,6,1};
+        int numeri[] = {2,4,6,3};
+        if (numeri.length == 0) {
+            System.out.println("L'array è vuoto.");
+            return;
+        }
         int sommaPari = 0;
         int sommaDispari = 0;
         int countPari = 0;
@@ -14,10 +18,7 @@ public class Media {
                 countDispari++;
             }
         }
-        if (numeri.length == 0) {
-            System.out.println("L'array è vuoto.");
-            return;
-        }
+
         if (countPari == 0) {
             System.out.println("non ci sono numeri pari");
         } else {

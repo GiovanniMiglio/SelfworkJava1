@@ -5,8 +5,11 @@ public class Sommatoria {
         Scanner sc = new Scanner(System.in);
         System.out.println("Quanto vuoi sia lungo l'array? ");
         int n = sc.nextInt();
+        if (n <= 0) {
+            System.out.println("N deve essere un valore positivo.");
+            return;
+        }
         int numeri[] = new int[n];
-
         for (int i = 0; i < n; i++) {
             System.out.println("Scrivi il numero " + (i + 1));
             numeri[i] = sc.nextInt();
